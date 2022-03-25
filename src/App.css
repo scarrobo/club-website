@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,148 @@
     transform: rotate(360deg);
   }
 }
+
+.temp {
+  min-height: 100vh;
+}
+
+/* ================= Landing Page ================= */
+
+.header {
+  font-size: 75px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    font-size: 175px;
+  }
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 2rem;
+  background: url('../public//temp-bg-2.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.typing-container {
+  text-align: center;
+  width: 100%;
+}
+
+.social-link {
+  color: #fff;
+  background-color: #000;
+}
+
+.social-link:hover {
+  color: #fff;
+  background-color: #d11313;
+}
+
+/* ================= Landing Page End ================= */
+
+/* ================= Navbar ================= */
+
+.underline {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  border-bottom: solid #000 2px;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover {
+  color: #000;
+}
+
+.hover-underline-animation {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #000;
+}
+
+.hover-underline-animation:hover {
+  color: #000;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.brand {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ================= Navbar End ================= */
+
+/* ================= Section ================= */
+
+.section-header {
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .section-header {
+    font-size: 75px;
+  }
+}
+
+/* ================= Section End ================= */
+
+/* ================= Team ================= */
+
+.card-img {
+  width: 200px;
+}
+
+.card-social-link {
+  color: #000;
+  background-color: #fff;
+}
+
+.card-social-link:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* ================= Team End ================= */
