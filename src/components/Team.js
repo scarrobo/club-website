@@ -7,7 +7,7 @@ import { Card, Row, Col } from 'react-bootstrap'
 const Member = ({member}) => {
     return (
         <Col>
-            <Card data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" border="light" className='card'>
+            <Card border="light" className='card'>
                 <Card.Img className='square rounded-circle border border-3 border-dark card-img mt-3' variant='top' src={member.image} />
                 <Card.Body>
                     <div className='text-center'>
@@ -26,7 +26,7 @@ const Team = () => {
         {
             name: 'member one',
             role: 'member one role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'github',
@@ -41,7 +41,7 @@ const Team = () => {
         {
             name: 'member two',
             role: 'member two role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'github',
@@ -56,7 +56,7 @@ const Team = () => {
         {
             name: 'member three',
             role: 'member three role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'linkedin',
@@ -67,7 +67,7 @@ const Team = () => {
         {
             name: 'member four',
             role: 'member four role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'github',
@@ -82,7 +82,7 @@ const Team = () => {
         {
             name: 'member five',
             role: 'member five role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'linkedin',
@@ -93,7 +93,7 @@ const Team = () => {
         {
             name: 'member six',
             role: 'member six role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'linkedin',
@@ -104,7 +104,7 @@ const Team = () => {
         {
             name: 'member seven',
             role: 'member seven role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'linkedin',
@@ -115,7 +115,7 @@ const Team = () => {
         {
             name: 'member eight',
             role: 'member eight role',
-            image: 'favicon.png',
+            image: 'anon.png',
             links: [
                 {
                     type: 'linkedin',
@@ -126,10 +126,10 @@ const Team = () => {
     ]
 
     return (
-        <div id='team' className='mb-5 container'>
-            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='section-header'>Our Team</h1>
-            <hr data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='my-3 col-6'/>
-            <Row xs={1} md={3} className='g-4'>
+        <div id='team' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='mb-5 container d-none'>
+            <h1 className='section-header'># Our Team</h1>
+            <hr className='my-3 col-md-6'/>
+            <Row xs={1} md={2} lg={3} className='g-4'>
                 {team.map(member => <Member key={member.name} member={member} />)}
             </Row>
         </div>

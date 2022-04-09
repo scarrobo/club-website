@@ -12,9 +12,9 @@ const Home = () => {
             <div className='mb-2 typing-container'>
                 <TypeAnimation cursor={true}
                     sequence={[
-                    'Welcome, to ScarRobo',
+                    'Welcome to ScarRobo',
                     5000,
-                    'Heh, this is a pretty cool typing thingy',
+                    'We are the robotics club at UTSC',
                     5000,
                     'I will fix this later :)',
                     5000

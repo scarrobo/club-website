@@ -10,7 +10,10 @@ import About from './components/About'
 import Events from './components/Events'
 import Team from './components/Team'
 import GettingStarted from './components/GettingStarted'
+import Footer from './components/Footer'
 
+// todo styling and colouring
+// todo need content put dummy stuff for now
 const App = () => {
     AOS.init()
     return (
@@ -21,6 +24,7 @@ const App = () => {
             <GettingStarted />
             <Team />
             <Events />
+            <Footer />
         </div>
     )
 }

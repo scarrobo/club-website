@@ -16,10 +16,10 @@ const Menu = () => {
     const addUnderline = (handler) => handler('hover-underline-animation')
 
     return (
-        <Navbar collapseOnSelect bg='light' expand="lg" className='shadow' fixed='top' data-aos="zoom-in" data-aos-delay="100">
+        <Navbar collapseOnSelect expand="lg" className='shadow' fixed='top' data-aos="zoom-in" data-aos-delay="100">
             <div className='container'>
                 <Scroll.Link to='home' className='mt-1 mb-1 me-4 brand' spy={true} offset={offset}>
-                    <Navbar.Brand ><strong>ScarRobo</strong></Navbar.Brand>
+                    <Navbar.Brand ><img className='rounded-circle navbar-logo' src='logo.png' alt='logo'/> <strong>ScarRobo</strong></Navbar.Brand>
                 </Scroll.Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -33,7 +33,7 @@ const Menu = () => {
                         <Scroll.Link activeClass='underline' to='getting-started' className={'mt-1 mb-1 me-4 ' + gsClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setGSClass)} onSetInactive={() => addUnderline(setGSClass)}>
                             Getting Started&nbsp;<FontAwesomeIcon icon={faGraduationCap}/>
                         </Scroll.Link>
-                        <Scroll.Link activeClass='underline' to='team' className={'mt-1 mb-1 me-4 ' + teamClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setTeamClass)} onSetInactive={() => addUnderline(setTeamClass)}>
+                        <Scroll.Link activeClass='underline' to='team' className={'d-none mt-1 mb-1 me-4 ' + teamClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setTeamClass)} onSetInactive={() => addUnderline(setTeamClass)}>
                             Our Team&nbsp;<FontAwesomeIcon icon={faUsers}/>
                         </Scroll.Link>
                         <Scroll.Link activeClass='underline' to='events' className={'mt-1 mb-1 me-4 ' + eventsClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setEventsClass)} onSetInactive={() => addUnderline(setEventsClass)}>

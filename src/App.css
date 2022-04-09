@@ -49,6 +49,7 @@ body {
 
 .header {
   font-size: 75px;
+  color: #fff;
 }
 
 @media only screen and (min-width: 600px) {
@@ -64,7 +65,7 @@ body {
   flex-direction: column;
   color: #fff;
   margin-bottom: 2rem;
-  background: url('../public//temp-bg-2.jpg');
+  background: url('../public/robot-bg.png');
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -83,7 +84,7 @@ body {
 
 .social-link:hover {
   color: #fff;
-  background-color: #d11313;
+  background-color: #0d712b;
 }
 
 /* ================= Landing Page End ================= */
@@ -93,13 +94,13 @@ body {
 .underline {
   cursor: pointer;
   text-decoration: none;
-  color: #000;
-  border-bottom: solid #000 2px;
+  color: #fff;
+  border-bottom: solid #0d712b 2px;
   transition: transform 0.25s ease-out;
 }
 
 .underline:hover {
-  color: #000;
+  color: #fff;
 }
 
 .hover-underline-animation {
@@ -107,11 +108,11 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #000;
+  color: #fff;
 }
 
 .hover-underline-animation:hover {
-  color: #000;
+  color: #fff;
 }
 
 .hover-underline-animation:after {
@@ -122,7 +123,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #0d712b;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -137,12 +138,26 @@ body {
   text-decoration: none;
 }
 
+nav {
+  background-color: #000e0f;
+}
+
+.navbar-brand {
+  color: #fff!important;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
 /* ================= Navbar End ================= */
 
 /* ================= Section ================= */
 
 .section-header {
   font-size: 50px;
+  color: #0d712b;
+  font-family: 'Source Code Pro', monospace;
 }
 
 @media only screen and (min-width: 600px) {
@@ -152,6 +167,20 @@ body {
 }
 
 /* ================= Section End ================= */
+
+/* ================= About ================= */
+
+.about-logo {
+  width: 200px;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-logo {
+    width: 410px;
+  }
+}
+
+/* ================= About End ================= */
 
 /* ================= Team ================= */
 
@@ -166,22 +195,88 @@ body {
 
 .card-social-link:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #0d712b;
 }
 
 .card{
+  width: 18em;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 2em;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
 
 .card:hover{
-  transform: scale(1.05);
+  transform:scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 /* ================= Team End ================= */
+
+/* ================= Getting Started ================= */
+
+.gs-event-jumbotron {
+  color: #000;
+  background-color: rgb(236, 232, 232);
+  margin-bottom: 2rem;
+  min-height: 35vw;
+  border-radius: 4em;
+  padding: 3em;
+  margin: 0;
+}
+
+.gs-event-jumbotron h2 {
+  font-size: 50px;
+}
+
+.article-card{
+  width: 15em;
+  padding: 3em;
+  height: 18em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.article-card:hover{
+  transform:scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.news {
+  font-size: 50px;
+}
+/* ================= Getting Started End ================= */
+
+/* ================= Footer ================= */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000e0f;
+  height: 14vh;
+  color: #fff;
+}
+
+/* ================= Footer End ================= */
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.btn-outline-success:hover {
+  background-color: #0d712b !important;
+}
+
+.carousel-inner {
+  max-height: 90vh;
+}
