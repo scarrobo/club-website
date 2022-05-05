@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 // todo styling and colouring
 // todo need content put dummy stuff for now
 const App = () => {
-    AOS.init()
+    AOS.init({once: true})
     return (
         <div>
             <Menu />

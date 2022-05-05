@@ -7,8 +7,8 @@ import { Card, Row, Col } from 'react-bootstrap'
 const Member = ({member}) => {
     return (
         <Col>
-            <Card border="light" className='card'>
-                <Card.Img className='square rounded-circle border border-3 border-dark card-img mt-3' variant='top' src={member.image} />
+            <Card border="light" className='team-card'>
+                <Card.Img className='square rounded-circle border border-3 border-dark team-card-img mt-3' variant='top' src={member.image} />
                 <Card.Body>
                     <div className='text-center'>
                         {member.links.length > 0? member.links.map(link => <a key={link.type} className='ms-2 me-2' target={'_blank'} href={link.link} rel='noreferrer'>{link.type === 'github'? <FontAwesomeIcon className='card-social-link' border size='lg' icon={faGithub} />:<FontAwesomeIcon className='card-social-link' border size='lg' icon={faLinkedin} />}</a>):<></>}

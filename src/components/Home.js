@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faDiscord, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faComment } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import TypeAnimation from 'react-type-animation';
 
 const Home = () => {
@@ -12,24 +12,21 @@ const Home = () => {
             <div className='mb-2 typing-container'>
                 <TypeAnimation cursor={true}
                     sequence={[
-                    'Welcome to ScarRobo',
+                    'Welcome to our site',
                     5000,
                     'We are the robotics club at UTSC',
                     5000,
-                    'I will fix this later :)',
+                    'We hope to help you start your journey with robotics',
                     5000
                     ]}
-                    wrapper="h3"
+                    wrapper="h2"
                     repeat={Infinity}
                 />
             </div>
             <div>
-                <a className='me-2' href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faInstagram} /></a>
-                <a className='me-2' href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faFacebook} /></a>
-                <a className='me-2' href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faTwitter} /></a>
-                <a className='me-2' href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faLinkedin} /></a>
-                <a className='me-2' href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faDiscord} /></a>
-                <a href='/#'><FontAwesomeIcon className='social-link' border size='lg' icon={faComment} /></a>
+                <a className='me-2' href='https://www.instagram.com/scar.robo.utsc/' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' border size='lg' icon={faInstagram} /></a>
+                <a className='me-2' href='mailto:scar_robo.utsc@outlook.com' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' border size='lg' icon={faEnvelope} /></a>
+                <a className='me-2' href='https://discord.gg/Mf4ack8sEU'><FontAwesomeIcon className='social-link' border size='lg' icon={faDiscord} /></a>
             </div>
         </div>
     )

@@ -10,12 +10,15 @@ const Events = () => {
                 <div className='col-md-7 d-inline'>
                     <h2 className='mb-4'>Robotics Workshop</h2>
                     <p className='mb-4'>
-                        Join us
+                        Join us to get hands on experience with robotics. 
+                        During our workshop there will be several stations, in each station you will get the chance to create a different 
+                        device using Arduino kits. People of all skill levels are welcome.
+                        Food and beverages will be provided!
                     </p>
-                    <a href='/#' className='btn btn-outline-success btn-lg col-md-4'>Sign Up Here!</a>
+                    <a href='/#' className='btn btn-outline-success btn-lg'>Registration Coming Soon!</a>
                 </div>
                 <div className='col-md-5 text-center d-none d-md-inline'>
-                    <img className='w-100 square border border-3 border-dark gs-event-img' src='logo.png' alt='logo' />
+                    <img className='w-100 square border border-3 border-dark gs-event-img' src='arduino.jpg' alt='arduino' />
                 </div>
             </div>
             <div className='d-none row justify-content-center mt-4'>

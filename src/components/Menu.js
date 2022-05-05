@@ -16,7 +16,7 @@ const Menu = () => {
     const addUnderline = (handler) => handler('hover-underline-animation')
 
     return (
-        <Navbar collapseOnSelect expand="lg" className='shadow' fixed='top' data-aos="zoom-in" data-aos-delay="100">
+        <Navbar className='shadow-lg' collapseOnSelect expand="lg" variant='dark' fixed='top' data-aos="zoom-in" data-aos-delay="100">
             <div className='container'>
                 <Scroll.Link to='home' className='mt-1 mb-1 me-4 brand' spy={true} offset={offset}>
                     <Navbar.Brand ><img className='rounded-circle navbar-logo' src='logo.png' alt='logo'/> <strong>ScarRobo</strong></Navbar.Brand>
